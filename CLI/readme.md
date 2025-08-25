@@ -13,7 +13,7 @@ This project contains the CLI implementation of SolrInstanceManager. The aim of 
 
 ## File structure
 
-- `App.config`: Contains the configurable settings for application. Check [Appendix 1](#Appendix-1) for the content structure
+- `AppSettings.json`: Contains the configurable settings for application. Check [Appendix 1](#Appendix-1) for the content structure
 - `solrentries.json`: Contains all the registered Solr instances. Check [Appendix 2](#Appendix-2) for the content structure
 - `/solrpackages`: The cache folder for downloaded Solr packages. Application will first determine if the required version of Solr package exists in this folder first before it attempts to download it from source
 - `/certificates`: This folder contains all certificates created and installed by SolrInstanceManager for your Solr instance with `-https` parameter presented in `create-instance` command
@@ -109,7 +109,7 @@ Optional parameters:
 }
 ```
 
-> 🚨 Above is just an example. It doesn't represent the default content in `App.config`
+> 🚨 Above is just an example. It doesn't represent the default content in `appsettings.json`
 
 - `downloadSource`: The source where application download Solr package
 - `sitecore.enabled`: A boolean value that determine whether or not to prompt for confirmation to setup Solr instance for Sitecore during `create-instance` command
