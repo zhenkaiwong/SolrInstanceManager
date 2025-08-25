@@ -13,4 +13,10 @@
       <ProjectReference Include="..\Kernel\Kernel.csproj" />
     </ItemGroup>
 
+    <ItemGroup>
+      <None Update="AppSettings.json">
+        <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      </None>
+    </ItemGroup>
+
 </Project>
